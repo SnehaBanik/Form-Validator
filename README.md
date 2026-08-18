@@ -44,8 +44,5 @@ Form-Validator/
 ├── index.html
 ├── style.css
 ├── script.js
-│
-├── screenshots/
-│   └── form-validator.png
-│
+│__form-validator.png
 └── README.md
