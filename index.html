@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email & Password Validator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="validator-box">
+
+            <h1>Account Validator</h1>
+            <p class="subtitle">Enter your details to validate your account</p>
+
+            <form id="validatorForm">
+
+                <!-- Email -->
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+
+                    <input 
+                        type="text" 
+                        id="email" 
+                        placeholder="Enter your email"
+                    >
+
+                    <small id="emailError"></small>
+                </div>
+
+
+                <!-- Password -->
+                <div class="input-group">
+                    <label for="password">Password</label>
+
+                    <div class="password-box">
+                        <input 
+                            type="password" 
+                            id="password" 
+                            placeholder="Enter your password"
+                        >
+
+                        <button 
+                            type="button" 
+                            id="togglePassword"
+                        >
+                            Show
+                        </button>
+                    </div>
+
+                    <small id="passwordError"></small>
+                </div>
+
+
+                <!-- Confirm Password -->
+                <div class="input-group">
+                    <label for="confirmPassword">Confirm Password</label>
+
+                    <input 
+                        type="password" 
+                        id="confirmPassword" 
+                        placeholder="Confirm your password"
+                    >
+
+                    <small id="confirmPasswordError"></small>
+                </div>
+
+
+                <!-- Password Requirements -->
+                <div class="requirements">
+
+                    <p>Password must contain:</p>
+
+                    <ul>
+                        <li id="length">At least 8 characters</li>
+                        <li id="uppercase">One uppercase letter</li>
+                        <li id="lowercase">One lowercase letter</li>
+                        <li id="number">One number</li>
+                        <li id="special">One special character</li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Submit -->
+                <button type="submit" class="submit-btn">
+                    Validate Account
+                </button>
+
+
+                <!-- Success Message -->
+                <p id="successMessage"></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
